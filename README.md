@@ -5,7 +5,7 @@
 ![image](https://img.shields.io/packagist/v/g4t/laravel-ddd.svg?style=flat)
 ![image](https://img.shields.io/packagist/l/g4t/laravel-ddd.svg?style=flat)
 [![Build Status](https://travis-ci.org/g4t/laravel-ddd.svg?branch=master)](https://travis-ci.org/g4t/laravel-ddd.svg?branch=master)
-[![StyleCI](https://styleci.io/repos/91183556/shield?branch=master)](https://styleci.io/repos/91183556)
+[![StyleCI](https://styleci.io/repos/91183556/shield?branch=master)](https://banner2.cleanpng.com/20180720/cax/kisspng-laravel-software-framework-php-web-application-redes-sociais-5b523130965485.0186996815321132006158.jpg)
 
 
 `
