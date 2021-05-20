@@ -7,6 +7,12 @@
 [![Build Status](https://travis-ci.org/g4t/laravel-ddd.svg?branch=master)](https://travis-ci.org/g4t/laravel-ddd.svg?branch=master)
 [![StyleCI](https://styleci.io/repos/91183556/shield?branch=master)](https://styleci.io/repos/91183556)
 
+
+`
+`
+`* Note: I did not create this library, i'm just updated it to work on the new releases of Laravel`  
+`* The owner of the library is: https://github.com/oleglfed/laravel-ddd`  
+
 This package is made to generate Domains, based on DB table. 
 Package get all table fields and creates domain. With Domain creates repository, service and Infrastructure. Also the Package automatically binds generated classes to your app, so you can easily use DI or make Service by contract `$service = app(UserServiceInterface::class);`  
 

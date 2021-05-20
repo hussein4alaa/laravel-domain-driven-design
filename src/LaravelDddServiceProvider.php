@@ -4,6 +4,7 @@ namespace g4t\LaravelDDD;
 
 use Illuminate\Support\ServiceProvider;
 use g4t\LaravelDDD\Commands\GenerateDomain;
+use Illuminate\Support\Facades\File;
 
 class LaravelDddServiceProvider extends ServiceProvider
 {
@@ -23,10 +24,14 @@ class LaravelDddServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $domain_path = config_path('domains');
+        if(!File::exists($domain_path)) {
+            mkdir($domain_path);
+        
         $this->config = $this->app->make('config');
         $this->packages = $this->config->get('domains.user-binding');
 
-        $files = \File::allFiles(config_path('domains'));
+        $files = File::allFiles(config_path('domains'));
 
         foreach ($files as $file) {
             if ($bindings = $this->config->get('domains.'.basename($file->getFilename(), '.php'))) {
@@ -43,6 +48,7 @@ class LaravelDddServiceProvider extends ServiceProvider
                 }
             }
         }
+    }
 
         if ($this->app->runningInConsole()) {
             $this->commands([
