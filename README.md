@@ -7,9 +7,9 @@
 [![Build Status](https://travis-ci.org/g4t/laravel-ddd.svg?branch=master)](https://travis-ci.org/g4t/laravel-ddd.svg?branch=master)
 
 
-`
-`
-`* Note: I did not create this library, i'm just updated it to work on the new releases of Laravel`  
+
+`* Note: I did not create this library, i'm just updated it to work on the new releases of Laravel`
+
 `* The owner of the library is: https://github.com/oleglfed/laravel-ddd`  
 
 This package is made to generate Domains, based on DB table. 
