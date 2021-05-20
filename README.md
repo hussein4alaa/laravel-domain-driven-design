@@ -2,9 +2,9 @@
 ### Domain Driven Development domains generator. 
 
 
-![image](https://img.shields.io/packagist/v/oleglfed/laravel-ddd.svg?style=flat)
-![image](https://img.shields.io/packagist/l/oleglfed/laravel-ddd.svg?style=flat)
-[![Build Status](https://travis-ci.org/oleglfed/laravel-ddd.svg?branch=master)](https://travis-ci.org/oleglfed/laravel-ddd.svg?branch=master)
+![image](https://img.shields.io/packagist/v/g4t/laravel-ddd.svg?style=flat)
+![image](https://img.shields.io/packagist/l/g4t/laravel-ddd.svg?style=flat)
+[![Build Status](https://travis-ci.org/g4t/laravel-ddd.svg?branch=master)](https://travis-ci.org/g4t/laravel-ddd.svg?branch=master)
 [![StyleCI](https://styleci.io/repos/91183556/shield?branch=master)](https://styleci.io/repos/91183556)
 
 This package is made to generate Domains, based on DB table. 
@@ -16,12 +16,12 @@ Package get all table fields and creates domain. With Domain creates repository,
 Require this package with composer using the following command:
 
 ```sh
-$ composer require oleglfed/laravel-ddd
+$ composer require g4t/laravel-ddd
 ```
 
 Go to your `config/app.php` and add the service provider:
 
-`\oleglfed\LaravelDDD\LaravelDddServiceProvider::class`
+`\g4t\LaravelDDD\LaravelDddServiceProvider::class`
 
 ## Usage
 This package creates `app/Domain` and `app/Infrastructure` directories. So at first package should be able to create these two directories. Afterwards, you can revoke writable access from `app` directory.

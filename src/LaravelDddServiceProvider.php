@@ -1,9 +1,9 @@
 <?php
 
-namespace oleglfed\LaravelDDD;
+namespace g4t\LaravelDDD;
 
 use Illuminate\Support\ServiceProvider;
-use oleglfed\LaravelDDD\Commands\GenerateDomain;
+use g4t\LaravelDDD\Commands\GenerateDomain;
 
 class LaravelDddServiceProvider extends ServiceProvider
 {

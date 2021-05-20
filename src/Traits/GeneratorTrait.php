@@ -1,6 +1,6 @@
 <?php
 
-namespace oleglfed\LaravelDDD\Traits;
+namespace g4t\LaravelDDD\Traits;
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;

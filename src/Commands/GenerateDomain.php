@@ -1,9 +1,9 @@
 <?php
 
-namespace oleglfed\LaravelDDD\Commands;
+namespace g4t\LaravelDDD\Commands;
 
 use Illuminate\Console\Command;
-use oleglfed\LaravelDDD\Traits\GeneratorTrait;
+use g4t\LaravelDDD\Traits\GeneratorTrait;
 
 class GenerateDomain extends Command
 {

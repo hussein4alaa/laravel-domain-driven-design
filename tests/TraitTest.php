@@ -2,7 +2,7 @@
 
 namespace Test;
 
-use oleglfed\LaravelDDD\Traits\GeneratorTrait;
+use g4t\LaravelDDD\Traits\GeneratorTrait;
 use PHPUnit\Framework\TestCase;
 
 class TraitTest extends TestCase

@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "oleglfed\\LaravelDDD\\": "src/"
+            "g4t\\LaravelDDD\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "oleglfed\\LaravelDDD\\Tests\\": "tests/"
+            "g4t\\LaravelDDD\\Tests\\": "tests/"
         }
     }
 }
