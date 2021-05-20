@@ -1,0 +1,55 @@
+<?php
+
+namespace {namespace}Domains\{directory};
+
+use {namespace}Domains\ServiceAbstract;
+use {namespace}Domains\{directory}\Contracts\{name}RepositoryInterface;
+use {namespace}Domains\{directory}\Contracts\{name}ServiceInterface;
+use {namespace}Domains\{directory}\Contracts\{name}Interface;
+
+/**
+ * {name}Service Class
+ * It has all useful methods for business logic.
+ */
+class {name}Service extends ServiceAbstract implements {name}ServiceInterface
+{
+    /**
+     * @var {name}RepositoryInterface
+     */
+    protected $repository;
+
+    /**
+     * Loads our $repo with the actual Repo associated with our {name}Interface
+     * {name}Service constructor.
+     *
+     * @param {name}RepositoryInterface $repository
+     */
+    public function __construct({name}RepositoryInterface $repository)
+    {
+        $this->repository = $repository;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function create({name}Interface ${name})
+    {
+        return $this->repository->create(${name});
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function update({name}Interface ${name})
+    {
+        return $this->repository->update(${name});
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function delete({name}Interface ${name})
+    {
+        return $this->repository->delete(${name});
+    }
+}

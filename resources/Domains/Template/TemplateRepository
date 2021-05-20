@@ -1,0 +1,66 @@
+<?php
+
+namespace {namespace}Domains\{directory};
+
+use {namespace}Domains\{directory}\Contracts\{name}RepositoryInterface;
+use {namespace}Infrastructures\{directory}\Contracts\Eloquent{name}RepositoryInterface;
+use {namespace}Domains\{directory}\Contracts\{name}Interface;
+use {namespace}Domains\RepositoryAbstract;
+use {namespace}Domains\Contracts\BaseEntityInterface;
+use Closure;
+
+/**
+ * Class {name}Repository.
+ */
+class {name}Repository extends RepositoryAbstract implements {name}RepositoryInterface
+{
+    /**
+     * {name}Repository constructor.
+     *
+     * @param Eloquent{name}RepositoryInterface $eloquent
+     */
+    public function __construct(Eloquent{name}RepositoryInterface $eloquent)
+    {
+        parent::__construct($eloquent);
+    }
+
+    /**
+     * Setup payload.
+     *
+     * @return array
+     */
+    public function setupPayload({name}Interface ${name})
+    {
+        return [
+            {repository}
+        ];
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function create({name}Interface ${name})
+    {
+        $data = $this->setupPayload(${name});
+
+        return $this->eloquent()->create($data);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function update({name}Interface ${name})
+    {
+        $data = $this->setupPayload(${name});
+       
+        return $this->eloquent()->update($data, ${name}->getKey());
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function delete({name}Interface ${name})
+    {
+        return $this->eloquent()->delete(${name}->getKey());
+    }
+}

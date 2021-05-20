@@ -1,0 +1,10 @@
+<?php
+
+namespace {namespace}Infrastructures\{directory}\Contracts;
+
+use {namespace}Infrastructures\Contracts\EloquentRepositoryInterface;
+
+interface Eloquent{name}RepositoryInterface extends EloquentRepositoryInterface
+{
+
+}
